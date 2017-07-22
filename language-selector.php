@@ -97,10 +97,10 @@ class LanguageSelectorPlugin extends Plugin
         $this->grav['twig']->twig_vars['path_flags'] = $path_flags;
 
         // Manage Assets
+        $this->grav['assets']->add('plugin://language-selector/js/language-selector.js');
         if ($this->config->get('plugins.language-selector.built_in_css')) {
           $this->grav['assets']->add('plugin://language-selector/css/language-selector.css');
         }
-        $this->grav['assets']->add('plugin://language-selector/js/language-selector.js');
     }
 
     public function getNativeName($code) {

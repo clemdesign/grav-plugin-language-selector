@@ -8,7 +8,7 @@
 
 Installing the Language Selector plugin can be done only manually for this moment. GPM  installation is not yet available
 
-## Manual Installation
+## Manual Installation (Download)
 
 To install this plugin, just download the zip version of this repository and unzip it under `user/plugins`. Then, rename the folder to `language-selector`. You can find these files either on [GitHub](https://github.com/clemdesign/grav-plugin-language-selector).
 
@@ -16,7 +16,10 @@ You should now have all the plugin files under
 
     /yoursite/user/plugins/language-selector
 
-Other way is to use `GIT`. In `user/plugins` folder, apply the following command:
+
+## Manual Installation (Using GIT)
+
+In `user/plugins` folder, apply the following command:
 ```
 git clone https://github.com/clemdesign/grav-plugin-language-selector language-selector
 ```
@@ -70,7 +73,17 @@ button_display: default
 select_display: default
 ```
 
-Options are pretty self explanatory.
+Options `enabled` and `built_in_css` are pretty self explanatory.
+
+For `button_display`, this one define how button of selected language will be displayed. There are 3 possibilities:
+- `default`: Flag and Language name are displayed
+- `flag`: Only flag is displayed
+- `name`: Only Llnguage name is displayed
+
+For `select_display`, this one define how language selector will be displayed. There are 3 possibilities:
+- `default`: Flag and Language name are displayed
+- `flag`: Only flag is displayed
+- `name`: Only Llnguage name is displayed
 
 ## Redirecting after switching language
 
