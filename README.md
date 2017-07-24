@@ -93,6 +93,19 @@ pages:
   redirect_default_route: true
 ```
 
+# Contribute
+
+# Languages
+
+For Administration panel, `Language Selector` is available in English and French. You could contribute for another languages.
+
+For flags and language names, it is available for both match between flag images (content in `language-selector/flags`) and the list of language name in `Grav/Common/Language/LanguageCodes.php`.  
+You could contribute by adding new flags to match with list of language name, or the opposite.
+
+Flag images are sized 24 x 12 pixels in PNG.
+
+
+
 # Credits
 
 [Language Selector](https://github.com/clemdesign/grav-plugin-language-selector) is based on [Lang Switcher](https://github.com/getgrav/grav-plugin-langswitcher) plugin.
