@@ -9,16 +9,26 @@ var dropdownmenu={
 	showhidedelay: [150, 150], 	//delay before menu appears and disappears when mouse rolls over it, in milliseconds
 
 	//***** NO NEED TO EDIT BEYOND HERE
-	builtdropdownids: [], //ids of dropdown already built (to prevent repeated building of same dropdown)
+	builtdropdownids: [], 		//ids of dropdown already built (to prevent repeated building of same dropdown)
+	stubboxenable: false,
 
-	showbox:function($, $dropdown, e){
+	showbox:function($, $dropdown){
+		this.stubboxenable = false
 		clearTimeout($dropdown.data('timers').hidetimer)
 		$dropdown.data('timers').showtimer=setTimeout(function(){$dropdown.show(dropdownmenu.animspeed)}, this.showhidedelay[0])
 	},
 
 	hidebox:function($, $dropdown){
-		clearTimeout($dropdown.data('timers').showtimer)
-		$dropdown.data('timers').hidetimer=setTimeout(function(){$dropdown.hide(100)}, this.showhidedelay[1]) //hide dropdown plus all of its sub ULs
+		if(this.stubboxenable == false) {
+			clearTimeout($dropdown.data('timers').showtimer)
+			$dropdown.data('timers').hidetimer=setTimeout(function(){$dropdown.hide(100)}, this.showhidedelay[1]) //hide dropdown plus all of its sub ULs
+		}
+	},
+
+	stubbox:function($, $dropdown){
+		this.stubboxenable = true
+		clearTimeout($dropdown.data('timers').hidetimer)
+		$dropdown.data('timers').showtimer=setTimeout(function(){$dropdown.show(dropdownmenu.animspeed)}, this.showhidedelay[0])
 	},
 
 
@@ -50,10 +60,13 @@ var dropdownmenu={
 		if ($target.parents().filter('ul.jqdropdown').length>0) //if $target matches an element within the dropdown markup, don't bind ondropdown to that element
 			return
 		$target.bind("mouseenter", function(e){
-			dropdownmenu.showbox($, $dropdown, e)
+			dropdownmenu.showbox($, $dropdown)
 		})
 		$target.bind("mouseleave", function(e){
 			dropdownmenu.hidebox($, $dropdown)
+		})
+		$target.bind("click", function(e){
+			dropdownmenu.stubbox($, $dropdown)
 		})
 	}
 };

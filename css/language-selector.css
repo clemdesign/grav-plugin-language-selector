@@ -32,7 +32,7 @@
 	  border: 1px solid transparent;
 	  /* size */
 	  padding: 5px 10px;
-	  font-size: 12px;
+	  font-size: 0.8rem;
 	  line-height: 1.5;
 	  border-radius: 3px;
 	  /* Aspect */
@@ -50,7 +50,7 @@
 	  float: left;
 	  padding: 5px 0;
 	  margin: 2px 0 0;
-	  font-size: 14px;
+	  font-size: 1rem;
 	  text-align: left;
 	  list-style: none;
 	  background-color: #fff;
@@ -60,9 +60,9 @@
 }
 
 .language-selector .dropdown-menu img {
-	width: 24px;
-	height: 12px;
-	max-width: inherit;
+		width: 24px;
+		height: 12px;
+		max-width: inherit;
 }
 
 .language-selector .dropdown-menu li {

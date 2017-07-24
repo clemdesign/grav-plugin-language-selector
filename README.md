@@ -78,12 +78,12 @@ Options `enabled` and `built_in_css` are pretty self explanatory.
 For `button_display`, this one define how button of selected language will be displayed. There are 3 possibilities:
 - `default`: Flag and Language name are displayed
 - `flag`: Only flag is displayed
-- `name`: Only Llnguage name is displayed
+- `name`: Only language name is displayed
 
 For `select_display`, this one define how language selector will be displayed. There are 3 possibilities:
 - `default`: Flag and Language name are displayed
 - `flag`: Only flag is displayed
-- `name`: Only Llnguage name is displayed
+- `name`: Only language name is displayed
 
 ## Redirecting after switching language
 
