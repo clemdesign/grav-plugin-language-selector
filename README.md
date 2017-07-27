@@ -103,7 +103,7 @@ pages:
 
 # Contribute
 
-# Languages
+## Languages
 
 For Administration panel, `Language Selector` is available in English and French. You could contribute for another languages.
 
