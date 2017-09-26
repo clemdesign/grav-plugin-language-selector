@@ -64,7 +64,7 @@ it:
         OPT_FLAG: 'Soltanto la bandiera'
         OPT_NAME: 'Soltanto il nome della lingua'       
       
-# Portuguese (br)
+# Portuguese (Brazil)
 pt-br:
   PLUGINS:
     LANGUAGE_SELECTOR:
@@ -84,4 +84,4 @@ pt-br:
         HELP: 'Define a apresentação do seletor de língua'
         OPT_DEFAULT: 'Bandeira + Nome da língua'
         OPT_FLAG: 'Apenas a bandeira'
-        OPT_NAME: 'Apenas o nome da língua'         
+        OPT_NAME: 'Apenas o nome da língua' 
