@@ -52,7 +52,7 @@ it:
         LABEL: 'Comportamento delle pagine non-tradotte'
         HELP: 'Determina il comportamento del link quando la pagina attuale non esiste in quella lingua, oppure esiste ma non è stata pubblicata.'
         OPT_NONE: 'Esibire lingua (default)'
-        OPT_REDIR: 'Esibire lingua, linkare all'URL di base'
+        OPT_REDIR: 'Esibire lingua, linkare all''URL di base'
         OPT_HIDE: 'Nascondere lingua'
       BUTTON_DISPLAY:
         LABEL: 'Presentazione del tasto'
