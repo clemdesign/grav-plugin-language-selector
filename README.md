@@ -52,6 +52,8 @@ Copy the template file [language-selector.html.twig](templates/partials/language
 
 You can now edit the override and tweak it however you prefer.
 
+`language-selector` need jQuery to display dropdown language menu.
+
 ## Usage of the `hreflang` partial
 
 A second template is available for `hreflang` annotations in the header of the page. In order to emit language annotations for the available languages of a page you need to add the corrsponding Twig partial template into the `<head>` section of your page, which can typically be found in `base.html.twig`:
