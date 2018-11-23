@@ -65,7 +65,7 @@ Copy the template file [language-selector.html.twig](templates/partials/language
 
 You can now edit the override and tweak it however you prefer.
 
-`language-selector` need jQuery to display dropdown language menu.
+`language-selector` need jQuery (1.8 -> later) to display dropdown language menu.
 
 ## 3. Usage of the `hreflang` partial
 

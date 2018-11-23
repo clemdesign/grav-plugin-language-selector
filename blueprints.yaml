@@ -1,5 +1,5 @@
 name: Language Selector
-version: 1.0.0
+version: 1.1.0
 description: Language Selector is a [Grav](http://github.com/getgrav/grav) plugin that provides native language selector with flags to switch between [multiple languages](http://learn.getgrav.org/content/multi-language).
 icon: globe
 author:
