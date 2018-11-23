@@ -36,7 +36,20 @@ This will clone this repository into the _language-selector_ folder.
 
 # Usage
 
-The `Language Selector` plugin doesn't require any configuration. You do however need to add the included Twig partials template into your own theme somewhere you want the available languages to be displayed.
+## 1. Define the supported languages
+
+In `system.yaml`, add the supported languages in `languages.supported` parameter.
+
+Example:
+
+    languages:
+      supported:
+        - fr
+        - en
+
+## 2. Integration
+
+You do need to add the included Twig partials template into your own theme somewhere you want the available languages to be displayed.
 
 ```
 {% include 'partials/language-selector.html.twig' %}
@@ -54,7 +67,7 @@ You can now edit the override and tweak it however you prefer.
 
 `language-selector` need jQuery to display dropdown language menu.
 
-## Usage of the `hreflang` partial
+## 3. Usage of the `hreflang` partial
 
 A second template is available for `hreflang` annotations in the header of the page. In order to emit language annotations for the available languages of a page you need to add the corrsponding Twig partial template into the `<head>` section of your page, which can typically be found in `base.html.twig`:
 

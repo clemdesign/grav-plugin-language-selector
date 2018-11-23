@@ -51,7 +51,7 @@ var dropdownmenu={
 		if (this.builtdropdownids.length === 0){ //only bind click event to document once
 			$(document).bind("click", function(e){
 				if (e.button === 0){ //hide all dropdown (and their sub ULs) when left mouse button is clicked
-					$('.jqdropdown').find('ul').andSelf().hide()
+					$('.jqdropdown').find('ul').addBack().hide()
 				}
 			})
 		}
